@@ -79,7 +79,7 @@ You can let GitHub automatically compile and publish your site every time you ty
            uses: actions/checkout@v4
 
          - name: Set up Node
-           uses: actions/node-versions@v4
+           uses: actions/setup-node@v4
            with:
              node-version: 20
 
