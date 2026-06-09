@@ -1,0 +1,21 @@
+{
+  "short_name": "SmartMenu",
+  "name": "Smart Mess Menu - CampusSync",
+  "id": "https://change-masters-smart-mess-menu-509739024573.us-west1.run.app",
+  "icons": [
+    {
+      "src": "https://picsum.photos/192/192",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://picsum.photos/512/512",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://change-masters-smart-mess-menu-509739024573.us-west1.run.app",
+  "display": "standalone",
+  "theme_color": "#f97316",
+  "background_color": "#ffffff"
+}
