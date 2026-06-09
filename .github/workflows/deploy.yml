@@ -2,7 +2,7 @@ name: Deploy static content to Pages
 
 on:
   push:
-    branches: ["main"] # Trigger on push or export to the main branch
+    branches: ["main"] # Change to your default branch name if it is master
 
 permissions:
   contents: read
@@ -24,19 +24,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/node-versions@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build
-        run: |
-          npm run build
-          cp sw.js dist/ || true
-          cp manifest.json dist/ || true
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
